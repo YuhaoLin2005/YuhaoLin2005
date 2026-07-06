@@ -90,7 +90,7 @@ flowchart TD
 - Quality gate reviewed by **xg-gh-25** on [anthropics/skills](https://github.com/anthropics/skills) (154K★).
 - Format-consistency anti-pattern in [agent-best-practices](https://github.com/NextFrontierBuilds/agent-best-practices).
 
-> Full contribution record: [github-contributions.md](https://github.com/YuhaoLin2005/digital-twin-config/blob/master/projects/C--Users-86131/memory/github-contributions.md)
+> Full contribution record: [github-contributions.md](https://github.com/YuhaoLin2005/claude-config/blob/master/projects/C--Users-86131/memory/github-contributions.md)
 
 ---
 
