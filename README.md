@@ -24,8 +24,8 @@ Scaffold for running DeepSeek models inside Claude Code. Agents, rules, security
 
 ### Academic: GIS & Remote Sensing
 - [Soil-WebGIS](https://github.com/YuhaoLin2005/soil-webgis) — Full-stack digital soil mapping (ArcGIS JS API + GeoServer + PostgreSQL)
-- [Landcover Classifier](https://github.com/YuhaoLin2005/landcover-classifier) — Landsat 8/9 → 5-class land cover. Decision Tree + Random Forest. 96.98% cross-validation agreement.
-- [Guangxi Tourism Map](https://github.com/YuhaoLin2005/guangxi-tourism-map) — Interactive tourism map with multi-layer visualization
+- Landcover Classifier — Landsat 8/9 → 5-class land cover, Decision Tree + Random Forest (private)
+- Guangxi Tourism Map — Interactive tourism map with multi-layer visualization (private)
 
 ---
 
