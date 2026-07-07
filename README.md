@@ -11,7 +11,9 @@ Four-layer AI self-model freshness monitor. Independently converged with Anthrop
 - [claude-skills](https://github.com/alirezarezvani/claude-skills) (21.4k★) — adversarial review (co-author)
 - [claude-code-skills](https://github.com/daymade/claude-code-skills) (1.2k★) — marketplace validation
 
-## Writing
-18 posts [DEV.to](https://dev.to/yuhaolin2005) · 5 posts [掘金](https://juejin.cn/user/4250072430682412/posts)
+## Find me on
+- [DEV.to](https://dev.to/yuhaolin2005) — 18 posts on AI agents, config engineering, prompt architecture
+- [掘金](https://juejin.cn/user/4250072430682412/posts) — 中文深度文章：J-space 复现、因果实验、奇异环
+- [Reddit u/linyuhao2005](https://reddit.com/user/linyuhao2005) — r/ClaudeAI, r/DeepSeek, r/LocalLLaMA
 
 **Contact:** lin_yuhao2005@163.com
