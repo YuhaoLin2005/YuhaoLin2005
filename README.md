@@ -38,7 +38,7 @@ Merged PRs to major AI agent ecosystems:
 | Project | Stars | Contribution | Status |
 |---------|-------|-------------|--------|
 | [ECC](https://github.com/affaan-m/ECC) | 227k | delivery-gate quality skill + Stop hook | ✅ Merged |
-| [claude-skills](https://github.com/alirezarezvani/claude-skills) | 21.2k | Named-persona adversarial review | ✅ Merged (co-author) |
+| [claude-skills](https://github.com/alirezarezvani/claude-skills) | 21.4k | Named-persona adversarial review | ✅ Merged (co-author) |
 | [claude-code-skills](https://github.com/daymade/claude-code-skills) | 1.2k | Marketplace validation + Windows compatibility | ✅ Merged |
 
 ---
