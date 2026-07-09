@@ -47,9 +47,8 @@ gategrow ──→ hermes-workspace ──→ training-gate
 
 ## ✍️ Writing
 
-- [DEV.to/yuhaolin2005](https://dev.to/yuhaolin2005) — 19 posts: AI agents, config engineering, prompt architecture
-- [掘金](https://juejin.cn/user/4250072430682412/posts) — 中文深度: J-space 复现, 因果实验, 奇异环
-- [Reddit u/linyuhao2005](https://reddit.com/user/linyuhao2005) — r/ClaudeAI, r/DeepSeek, r/LocalLLaMA
+- [DEV.to/yuhaolin2005](https://dev.to/yuhaolin2005) — 19 posts in English: AI agents, config engineering, prompt architecture
+- [掘金/YuhaoLin2005yhl](https://juejin.cn/user/4250072430682412/posts) — 7 篇中文深度: J-space, 因果实验, 奇异环, 行为漂移
 - [LEARNING.md](./LEARNING.md) — 公开学习日志：翻车→修正→再生。不是教程，是过程。
 
 ---
