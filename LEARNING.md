@@ -90,7 +90,7 @@
 
 这些不是"觉得有用所以做"——是踩了坑、修了、提炼出来的：
 
-- **[delivery-gate](https://github.com/YuhaoLin2005/gategrow)**: Stop hook，200 行 Python，零依赖。查"session 的思考有没有沉淀"——代码全绿不等于学习被捕获。已并入 ECC (200K+★)。
+- **[delivery-gate](https://github.com/affaan-m/ECC)**: Stop hook，200 行 Python，零依赖。查"session 的思考有没有沉淀"——代码全绿不等于学习被捕获。已并入 ECC（PR #2378 merged）。
 - **[training-gate](https://github.com/YuhaoLin2005/training-gate)**: 行为漂移检测。loss 降了但模型崩了——损失函数不告诉你。已提交 HF Evaluate PR #778。
 - **[hermes-workspace](https://github.com/YuhaoLin2005/hermes-workspace)**: 长会话漂移的认知架构。独立复现 Anthropic J-space 发现。Causal swap n=30, p=0.0092。
 
@@ -99,9 +99,9 @@
 ## 📖 相关
 
 - [README.md](./README.md) — 项目总览
-- [DEV.to](https://dev.to/yuhaolin2005) — 19 篇技术文章
+- [DEV.to](https://dev.to/yuhaolin2005) — 31 篇技术文章 · [掘金](https://juejin.cn/user/4250072430682412) — 中文技术写作
 - 私有 growth-log 完整版 — 150+ session, 30+ 翻车, 14 条模式。联系获取。
 
 ---
 
-*Last updated: 2026-07-09 · Extracted from private growth-log v0.8*
+*Last updated: 2026-07-25 · Extracted from private growth-log*
