@@ -24,7 +24,7 @@ I design experiments where AI agents are told to follow rules, then measure comp
 
 ### Writing
 
-- [DEV.to](https://dev.to/yuhaolin2005) — 31 articles (EN). Experiment methodology, pre-registration, null results.
+- [DEV.to](https://dev.to/yuhaolin2005) — 32 articles (EN). Experiment methodology, pre-registration, null results.
 - [掘金](https://juejin.cn/user/4250072430682412) — 中文技术写作. Prompt architecture, agent governance, constraint boundaries.
 
 ### Open source
