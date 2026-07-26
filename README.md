@@ -31,7 +31,7 @@ I design experiments where AI agents are told to follow rules, then measure comp
 
 - [ECC](https://github.com/affaan-m/ECC) — PR #2378 delivery-gate skill (merged)
 - [claude-skills](https://github.com/alirezarezvani/claude-skills) — PR #867 adversarial review (merged)
-- [claude-code-skills](https://github.com/daymade/claude-code-skills) — PR #118 marketplace validation (merged)
+- [claude-code-skills](https://github.com/daymade/claude-code-skills) — PR #118 marketplace validation (submitted)
 
 ---
 
