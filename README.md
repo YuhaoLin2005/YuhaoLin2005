@@ -1,13 +1,33 @@
-# 林宇浩 (Yuhao Lin)
+<p align="center">
+  <a href="https://yuhaolin2005.github.io">
+    <samp>繁·园</samp>
+  </a>
+</p>
 
-AI agents say they follow rules. I measure whether they actually do.
-Pre-registered experiments. Mechanical scoring. No cherry-picking.
+<p align="center">
+  <sub>thought becomes garden</sub>
+</p>
 
-FAFU undergrad · Spatial Information & Digital Technology · Seeking 2026 internship
+---
+
+**Yuhao Lin** · HCI + AI
+
+FAFU undergrad · Spatial Information & Digital Technology
+
+`build in public` · `question → test` · `self-falsify` · `honest failure` · `systems not tools` · `measure everything` · `write to think` · `design from first principles`
+
+━━━
+
+<a href="https://dev.to/yuhaolin2005"><img src="https://img.shields.io/badge/DEV.to-000?style=flat&logo=devdotto&logoColor=white" /></a>
+<a href="https://juejin.cn/user/YuhaoLin2005"><img src="https://img.shields.io/badge/掘金-1E80FF?style=flat&logo=juejin&logoColor=white" /></a>
+<a href="https://github.com/YuhaoLin2005"><img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" /></a>
 
 ---
 
 ### What I do
+
+AI agents say they follow rules. I measure whether they actually do.
+Pre-registered experiments. Mechanical scoring. No cherry-picking.
 
 I design experiments where AI agents are told to follow rules, then measure compliance with deterministic scripts — regex, file timestamps, exit codes. Not LLM judges. When the data contradicts my hypothesis, I publish it anyway (SHA256 pre-registration means I can't rewrite it).
 
@@ -21,11 +41,6 @@ I design experiments where AI agents are told to follow rules, then measure comp
 | Tooling | [paper-validator](https://github.com/YuhaoLin2005/paper-validator) | `python -m paper_validator claim --all` — one-command audit |
 | Findings | [compact-counter](https://github.com/YuhaoLin2005/compact-counter) | 459 sessions tracked, 425 compaction events, sweet spot detection |
 | ML | [digital-twin-trainer](https://github.com/YuhaoLin2005/digital-twin-trainer) | QLoRA + DPO pipeline, behavioral drift metrics |
-
-### Writing
-
-- [DEV.to](https://dev.to/yuhaolin2005) — 32 articles (EN). Experiment methodology, pre-registration, null results.
-- [掘金](https://juejin.cn/user/4250072430682412) — 中文技术写作. Prompt architecture, agent governance, constraint boundaries.
 
 ### Open source
 
