@@ -8,7 +8,9 @@
 
 ---
 
-FAFU undergrad · Spatial Information & Digital Technology
+**I proved AI agents can't self-verify — then built a system that catches 98.7% of their violations.**
+
+FAFU undergrad · Spatial Information & Digital Technology · Seeking 2026 internship · linyuhao2005@gmail.com
 
 `build in public` · `question → test` · `self-falsify` · `honest failure` · `systems not tools` · `measure everything` · `write to think` · `design from first principles`
 
@@ -20,30 +22,74 @@ FAFU undergrad · Spatial Information & Digital Technology
 
 ---
 
-### What I do
+### By the numbers
 
-AI agents say they follow rules. I measure whether they actually do.
-Pre-registered experiments. Mechanical scoring. No cherry-picking.
-
-I design experiments where AI agents are told to follow rules, then measure compliance with deterministic scripts — regex, file timestamps, exit codes. Not LLM judges. When the data contradicts my hypothesis, I publish it anyway (SHA256 pre-registration means I can't rewrite it).
-
-**16 experiments completed. All data, code, and scoring scripts public.**
-
-### Key work
-
-| Area | Repository | One-line |
-|------|-----------|----------|
-| Research | [hermes-workspace](https://github.com/YuhaoLin2005/hermes-workspace) | 13 pre-registered experiments, paper drafts, raw data |
-| Tooling | [paper-validator](https://github.com/YuhaoLin2005/paper-validator) | `python -m paper_validator claim --all` — one-command audit |
-| Findings | [compact-counter](https://github.com/YuhaoLin2005/compact-counter) | 459 sessions tracked, 425 compaction events, sweet spot detection |
-| ML | [digital-twin-trainer](https://github.com/YuhaoLin2005/digital-twin-trainer) | QLoRA + DPO pipeline, behavioral drift metrics |
-
-### Open source
-
-- [ECC](https://github.com/affaan-m/ECC) — PR [#2377](https://github.com/affaan-m/ECC/pull/2377) growth-log skill, [#2378](https://github.com/affaan-m/ECC/pull/2378) delivery-gate skill (both merged)
-- [claude-skills](https://github.com/alirezarezvani/claude-skills) — PR [#867](https://github.com/alirezarezvani/claude-skills/pull/867) named-persona-adversarial-review (merged · Co-authored-by)
-- [crewAI](https://github.com/crewAIInc/crewAI) — Issue [#6428](https://github.com/crewAIInc/crewAI/issues/6428) language-aware prompt routing → PR [#6491](https://github.com/crewAIInc/crewAI/pull/6491) built by ashusnapx (96 tests, pending merge)
+| What | Number | Evidence |
+|------|--------|----------|
+| Experiments completed | **16** | 2,500+ API calls, 1,100+ formal trials, 3 architectures |
+| Violation reduction | **55.9% → 0.7%** | 34-session retrospective + 150-task A/B test |
+| Zero-violation ceiling | **99.3%** | 149/150 tasks with full L0-L4 stack |
+| Logprob evidence | **d=+0.578, BF=282k** | 40 probes × 4 categories, API-read DV (no human scoring) |
+| Claims validated | **10** | 2 hypotheses pre-registered and honestly falsified |
+| Production hooks | **20+** | 38-hook audit → 87% noise removed, zero signal loss |
+| DEV.to articles | **32** | 45 comments written, 608 followers, 29 reactions |
+| Open source PRs | **3 merged** | ECC, claude-skills, claude-code-skills |
+| Commits since July 1 | **102** | Across 3 repos (hermes-workspace, paper-validator, fu-garden) |
 
 ---
 
-[LEARNING.md](./LEARNING.md) — Public learning log. Patterns extracted from 150+ sessions. What broke, what I learned, what I built from it.
+### The finding
+
+LLM agents share a structural constraint I call the **Prose Barrier**: generation and self-verification use the same decoder `P(token | context; θ)`, so an agent cannot distinguish "I followed the rule" from "I generated text claiming I followed the rule." This is not a prompt engineering problem — it's an architectural one.
+
+The fix is **Cross-Type Bidirectional Verification (CTBV)** — pairing mechanical gates (filesystem checks, regex — deterministic, outside the model) with semantic gates (logprob probes, format encoding — probabilistic, inside the model). Because these two gate types have **orthogonal blind spots**, their joint false-negative rate approaches zero. Formalized with 3 theorems and validated across 16 experiments.
+
+### How I work
+
+- **Deterministic scoring only.** Regex, file timestamps, exit codes. No LLM judge — LLMs share the Prose Barrier.
+- **Pre-registration.** SHA256-hashed experiment scripts before running. If the data kills my hypothesis, I publish it anyway.
+- **Honest null results.** P1-2 (240 trials): pre-registered hypothesis was WRONG. The actual finding was more interesting. Both are in the report.
+
+---
+
+### Repositories
+
+| Repo | What's inside |
+|------|---------------|
+| **[paper-validator](https://github.com/YuhaoLin2005/paper-validator)** | Experiment runner + 16 result files + [CTBV Technical Report](https://github.com/YuhaoLin2005/paper-validator/blob/main/CTBV-TECHNICAL-REPORT.md) (10 claims, 16 experiments, ~2,500 API calls) |
+| **[hermes-workspace](https://github.com/YuhaoLin2005/hermes-workspace)** | Live 5-layer agent governance system (L0-L4) + [CTBV Formal Theory](https://github.com/YuhaoLin2005/hermes-workspace/blob/main/paper/theory/cross-type-bidirectional-verification.md) (3 theorems, formal proofs, 20 references, target ICLR/NeurIPS) |
+| **[compact-counter](https://github.com/YuhaoLin2005/compact-counter)** | 459 sessions tracked, 425 compaction events, context degradation analysis |
+| **[digital-twin-trainer](https://github.com/YuhaoLin2005/digital-twin-trainer)** | QLoRA + DPO pipeline, behavioral drift metrics, 253 training samples |
+
+---
+
+### 3 articles that tell the story
+
+1. **[I Discovered AI Agents Can't Self-Verify. The Real Problem Is Much Bigger.](https://dev.to/yuhaolin2005/i-discovered-ai-agents-cant-self-verify-the-real-problem-is-much-bigger-2jb6)**
+   → Theory: Prose Barrier + CTBV + Gate Audit. 38 hooks, 87% noise removed, zero signal loss.
+
+2. **[I Ran 150 Tasks to Test If AI Agents Follow Rules. The Answer Surprised Me.](https://dev.to/yuhaolin2005/i-ran-150-tasks-to-test-if-ai-agents-follow-rules-the-answer-surprised-me-2670)**
+   → Empirics: 55.9% violation rate without gates → 0.7% with mechanical enforcement. Syllogism vs imperative A/B.
+
+3. **[I Pre-Registered a Hypothesis. 600 API Calls Later, the Data Killed It.](https://dev.to/yuhaolin2005/i-pre-registered-a-hypothesis-600-api-calls-later-the-data-killed-it-1aec)**
+   → Rigor: Pre-registration, SHA256 tamper-proofing, hypothesis falsified, honest reporting.
+
+More: [dev.to/yuhaolin2005](https://dev.to/yuhaolin2005) (32 articles) · [掘金](https://juejin.cn/user/4250072430682412) (20 articles, 中文)
+
+---
+
+### Open source contributions
+
+- **[ECC](https://github.com/affaan-m/ECC)** — PR [#2377](https://github.com/affaan-m/ECC/pull/2377) growth-log skill, [#2378](https://github.com/affaan-m/ECC/pull/2378) delivery-gate skill (both merged)
+- **[claude-skills](https://github.com/alirezarezvani/claude-skills)** — PR [#867](https://github.com/alirezarezvani/claude-skills/pull/867) named-persona-adversarial-review (merged · Co-authored-by)
+- **[crewAI](https://github.com/crewAIInc/crewAI)** — Issue [#6428](https://github.com/crewAIInc/crewAI/issues/6428) language-aware prompt routing → PR [#6491](https://github.com/crewAIInc/crewAI/pull/6491) built by ashusnapx (96 tests, pending merge)
+
+---
+
+### Community
+
+4 DEV.to readers proposed experiments later adopted into the pipeline — Mike Czerwinski (residual cluster analysis), Dipankar Sarkar (SHA256 pre-registration), Max Quimby (mechanizability scanner), René Zander (independent gate engine architecture comparison). 45 comments written across 93 received.
+
+---
+
+[**LEARNING.md**](./LEARNING.md) — Public learning log. Patterns from 150+ sessions. What broke, what I learned, what I built.
