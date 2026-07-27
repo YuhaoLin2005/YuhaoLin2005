@@ -40,9 +40,8 @@ I design experiments where AI agents are told to follow rules, then measure comp
 
 ### Open source
 
-- [ECC](https://github.com/affaan-m/ECC) — PR #2378 delivery-gate skill (merged)
-- [claude-skills](https://github.com/alirezarezvani/claude-skills) — PR #867 adversarial review (merged)
-- [claude-code-skills](https://github.com/daymade/claude-code-skills) — PR #118 marketplace validation (submitted)
+- [ECC](https://github.com/affaan-m/ECC) — PR [#2377](https://github.com/affaan-m/ECC/pull/2377) growth-log skill, [#2378](https://github.com/affaan-m/ECC/pull/2378) delivery-gate skill (both merged)
+- [claude-skills](https://github.com/alirezarezvani/claude-skills) — PR [#867](https://github.com/alirezarezvani/claude-skills/pull/867) named-persona-adversarial-review (merged · Co-authored-by)
 
 ---
 
