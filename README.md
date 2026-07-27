@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <sub>HCI + AI · thought becomes garden</sub>
+  <sub><a href="https://yuhaolin2005.github.io">thought becomes garden</a></sub>
 </p>
 
 ---
