@@ -1,16 +1,12 @@
 <p align="center">
-  <a href="https://yuhaolin2005.github.io">
-    <samp>繁·园</samp>
-  </a>
+  <samp>Yuhao Lin</samp>
 </p>
 
 <p align="center">
-  <sub>thought becomes garden</sub>
+  <sub>HCI + AI · thought becomes garden</sub>
 </p>
 
 ---
-
-**Yuhao Lin** · HCI + AI
 
 FAFU undergrad · Spatial Information & Digital Technology
 
