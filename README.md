@@ -42,6 +42,7 @@ I design experiments where AI agents are told to follow rules, then measure comp
 
 - [ECC](https://github.com/affaan-m/ECC) — PR [#2377](https://github.com/affaan-m/ECC/pull/2377) growth-log skill, [#2378](https://github.com/affaan-m/ECC/pull/2378) delivery-gate skill (both merged)
 - [claude-skills](https://github.com/alirezarezvani/claude-skills) — PR [#867](https://github.com/alirezarezvani/claude-skills/pull/867) named-persona-adversarial-review (merged · Co-authored-by)
+- [crewAI](https://github.com/crewAIInc/crewAI) — Issue [#6428](https://github.com/crewAIInc/crewAI/issues/6428) language-aware prompt routing → PR [#6491](https://github.com/crewAIInc/crewAI/pull/6491) built by ashusnapx (96 tests, pending merge)
 
 ---
 
