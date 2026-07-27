@@ -19,7 +19,7 @@ FAFU undergrad · Spatial Information & Digital Technology
 ━━━
 
 <a href="https://dev.to/yuhaolin2005"><img src="https://img.shields.io/badge/DEV.to-000?style=flat&logo=devdotto&logoColor=white" /></a>
-<a href="https://juejin.cn/user/YuhaoLin2005"><img src="https://img.shields.io/badge/掘金-1E80FF?style=flat&logo=juejin&logoColor=white" /></a>
+<a href="https://juejin.cn/user/4250072430682412"><img src="https://img.shields.io/badge/掘金-1E80FF?style=flat&logo=juejin&logoColor=white" /></a>
 <a href="https://github.com/YuhaoLin2005"><img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" /></a>
 
 ---
