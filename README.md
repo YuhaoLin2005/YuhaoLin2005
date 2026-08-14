@@ -33,7 +33,7 @@ FAFU undergrad · Spatial Information & Digital Technology · Seeking 2027 inter
 | Claims validated | **10** | 2 hypotheses pre-registered and honestly falsified |
 | Production hooks | **20+** | 38-hook audit → 87% noise removed, zero signal loss |
 | DEV.to articles | **32** | 49 comments written, 608 followers, 29 reactions |
-| Open source PRs | **4 merged** · 3 open | evalscope #1576 · ECC ×2 · claude-skills — TencentDB-Agent-Memory #977, coze-loop #617, agentscope #2306 pending |
+| Open source PRs | **4 merged** in external repos | evalscope #1576 · ECC #2377/#2378 · claude-skills #867 (co-author) |
 | Commits since July 1 | **131+** | hermes-workspace (106) + paper-validator (25) + others |
 
 ---
