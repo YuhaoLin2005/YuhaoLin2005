@@ -10,7 +10,7 @@
 
 **I proved AI agents can't self-verify — then built a system that catches 98.7% of their violations.**
 
-FAFU undergrad · Spatial Information & Digital Technology · Seeking 2026 internship · linyuhao2005@gmail.com
+FAFU undergrad · Spatial Information & Digital Technology · Seeking 2027 internship — LLM evaluation & agent governance · linyuhao2005@gmail.com
 
 `build in public` · `question → test` · `self-falsify` · `honest failure` · `systems not tools` · `measure everything` · `write to think` · `design from first principles`
 
@@ -32,9 +32,9 @@ FAFU undergrad · Spatial Information & Digital Technology · Seeking 2026 inter
 | Logprob evidence | **d=+0.578, BF=282k** | 40 probes × 4 categories, API-read DV (no human scoring) |
 | Claims validated | **10** | 2 hypotheses pre-registered and honestly falsified |
 | Production hooks | **20+** | 38-hook audit → 87% noise removed, zero signal loss |
-| DEV.to articles | **32** | 45 comments written, 608 followers, 29 reactions |
-| Open source PRs | **3 merged** | ECC, claude-skills, claude-code-skills |
-| Commits since July 1 | **102** | Across 3 repos (hermes-workspace, paper-validator, fu-garden) |
+| DEV.to articles | **32** | 49 comments written, 608 followers, 29 reactions |
+| Open source PRs | **4 merged** · 3 open | evalscope #1576 · ECC ×2 · claude-skills — TencentDB-Agent-Memory #977, coze-loop #617, agentscope #2306 pending |
+| Commits since July 1 | **131+** | hermes-workspace (106) + paper-validator (25) + others |
 
 ---
 
@@ -43,6 +43,8 @@ FAFU undergrad · Spatial Information & Digital Technology · Seeking 2026 inter
 LLM agents share a structural constraint I call the **Prose Barrier**: generation and self-verification use the same decoder `P(token | context; θ)`, so an agent cannot distinguish "I followed the rule" from "I generated text claiming I followed the rule." This is not a prompt engineering problem — it's an architectural one.
 
 The fix is **Cross-Type Bidirectional Verification (CTBV)** — pairing mechanical gates (filesystem checks, regex — deterministic, outside the model) with semantic gates (logprob probes, format encoding — probabilistic, inside the model). Because these two gate types have **orthogonal blind spots**, their joint false-negative rate approaches zero. Formalized with 3 theorems and validated across 16 experiments.
+
+**Immutable preprint + every figure & data file, minted on Zenodo:** [doi 10.5281/zenodo.21933727](https://doi.org/10.5281/zenodo.21933727)
 
 ### How I work
 
@@ -83,12 +85,16 @@ More: [dev.to/yuhaolin2005](https://dev.to/yuhaolin2005) (32 articles) · [掘�
 - **[ECC](https://github.com/affaan-m/ECC)** — PR [#2377](https://github.com/affaan-m/ECC/pull/2377) growth-log skill, [#2378](https://github.com/affaan-m/ECC/pull/2378) delivery-gate skill (both merged)
 - **[claude-skills](https://github.com/alirezarezvani/claude-skills)** — PR [#867](https://github.com/alirezarezvani/claude-skills/pull/867) named-persona-adversarial-review (merged · Co-authored-by)
 - **[crewAI](https://github.com/crewAIInc/crewAI)** — Issue [#6428](https://github.com/crewAIInc/crewAI/issues/6428) language-aware prompt routing → PR [#6491](https://github.com/crewAIInc/crewAI/pull/6491) built by ashusnapx (96 tests, pending merge)
+- **[evalscope](https://github.com/modelscope/evalscope)** (Alibaba's LLM-evaluation framework) — PR [#1576](https://github.com/modelscope/evalscope/pull/1576) **merged 2026-08-14** — fail-closed guard on `[ERROR]` judge responses in the shared LLM-judge scoring path + surfaced two silent score-extraction paths + unit tests locking the contract
+- **[TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory)** — PR [#977](https://github.com/TencentCloud/TencentDB-Agent-Memory/pull/977) (open) — aligned conversation-delete isolation with L1 atomic delete, fixing silent no-op deletes
+- **[coze-loop](https://github.com/coze-dev/coze-loop)** — PR [#617](https://github.com/coze-dev/coze-loop/pull/617) (open) — anchored score-extraction regex to the key position, fixing silent wrong-score pulls from reason text (42/42 tests, red/green verified)
+- **[agentscope](https://github.com/agentscope-ai/agentscope)** — [Discussion #2306](https://github.com/agentscope-ai/agentscope/discussions/2306) (open) — opt-in "source changed since derived" recency marker for AgenticMemoryMiddleware
 
 ---
 
 ### Community
 
-4 DEV.to readers proposed experiments later adopted into the pipeline — Mike Czerwinski (residual cluster analysis), Dipankar Sarkar (SHA256 pre-registration), Max Quimby (mechanizability scanner), René Zander (independent gate engine architecture comparison). 45 comments written across 93 received.
+4 DEV.to readers proposed experiments later adopted into the pipeline — Mike Czerwinski (residual cluster analysis), Dipankar Sarkar (SHA256 pre-registration), Max Quimby (mechanizability scanner), René Zander (independent gate engine architecture comparison). 49 comments written across 93 received.
 
 ---
 
