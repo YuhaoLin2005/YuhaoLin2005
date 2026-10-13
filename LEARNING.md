@@ -99,9 +99,9 @@
 ## 📖 相关
 
 - [README.md](./README.md) — 项目总览
-- [DEV.to](https://dev.to/yuhaolin2005) — 31 篇技术文章 · [掘金](https://juejin.cn/user/4250072430682412) — 中文技术写作
+- [DEV.to](https://dev.to/yuhaolin2005) — 33 篇技术文章 · [掘金](https://juejin.cn/user/4250072430682412) — 中文技术写作
 - 私有 growth-log 完整版 — 150+ session, 30+ 翻车, 14 条模式。联系获取。
 
 ---
 
-*Last updated: 2026-07-25 · Extracted from private growth-log*
+*Last updated: 2026-10-13 · Extracted from private growth-log*

@@ -27,12 +27,12 @@ FAFU undergrad · Spatial Information & Digital Technology · Seeking 2027 inter
 | What | Number | Evidence |
 |------|--------|----------|
 | Experiments completed | **16** | 2,500+ API calls, 1,100+ formal trials, 3 architectures |
-| Violation reduction | **55.9% → 0.7%** | 34-session retrospective + 150-task A/B test |
+| Rule-violation rate | **55.9% → 0.7%** | 19/34 sessions → 1/150 gated tasks (different denominators) |
 | Zero-violation ceiling | **99.3%** | 149/150 tasks with full L0-L4 stack |
 | Logprob evidence | **d=+0.578, BF=282k** | 40 probes × 4 categories, API-read DV (no human scoring) |
 | Claims validated | **10** | 2 hypotheses pre-registered and honestly falsified |
 | Production hooks | **20+** | 38-hook audit → 87% noise removed, zero signal loss |
-| DEV.to articles | **32** | 49 comments written, 608 followers, 29 reactions |
+| DEV.to articles | **33** | 49 comments written, 615 followers, 29 reactions |
 | Open source PRs | **4 merged** in external repos | evalscope #1576 · ECC #2377/#2378 · claude-skills #867 (co-author) |
 | Commits since July 1 | **131+** | hermes-workspace (106) + paper-validator (25) + others |
 
@@ -61,7 +61,7 @@ The fix is **Cross-Type Bidirectional Verification (CTBV)** — pairing mechanic
 | **[paper-validator](https://github.com/YuhaoLin2005/paper-validator)** | Experiment runner + 16 result files + [CTBV Technical Report](https://github.com/YuhaoLin2005/paper-validator/blob/main/CTBV-TECHNICAL-REPORT.md) (10 claims, 16 experiments, ~2,500 API calls) |
 | **[hermes-workspace](https://github.com/YuhaoLin2005/hermes-workspace)** | Live 5-layer agent governance system (L0-L4) + [CTBV Formal Theory](https://github.com/YuhaoLin2005/hermes-workspace/blob/main/paper/theory/cross-type-bidirectional-verification.md) (3 theorems, formal proofs, 20 references, target ICLR/NeurIPS) |
 | **[compact-counter](https://github.com/YuhaoLin2005/compact-counter)** | 459 sessions tracked, 425 compaction events, context degradation analysis |
-| **[digital-twin-trainer](https://github.com/YuhaoLin2005/digital-twin-trainer)** | QLoRA + DPO pipeline, behavioral drift metrics, 253 training samples |
+| **[training-gate](https://github.com/YuhaoLin2005/training-gate)** | Fine-tuning quality gate + behavioral drift detection — loss ↓ but behavior collapsed; metrics catch what loss curves miss |
 
 ---
 
@@ -71,12 +71,12 @@ The fix is **Cross-Type Bidirectional Verification (CTBV)** — pairing mechanic
    → Theory: Prose Barrier + CTBV + Gate Audit. 38 hooks, 87% noise removed, zero signal loss.
 
 2. **[I Ran 150 Tasks to Test If AI Agents Follow Rules. The Answer Surprised Me.](https://dev.to/yuhaolin2005/i-ran-150-tasks-to-test-if-ai-agents-follow-rules-the-answer-surprised-me-2670)**
-   → Empirics: 55.9% violation rate without gates → 0.7% with mechanical enforcement. Syllogism vs imperative A/B.
+   → Empirics: 55.9% rule-violation rate across 34 sessions → 0.7% across 150 gated tasks. Syllogism vs imperative A/B.
 
 3. **[I Pre-Registered a Hypothesis. 600 API Calls Later, the Data Killed It.](https://dev.to/yuhaolin2005/i-pre-registered-a-hypothesis-600-api-calls-later-the-data-killed-it-1aec)**
    → Rigor: Pre-registration, SHA256 tamper-proofing, hypothesis falsified, honest reporting.
 
-More: [dev.to/yuhaolin2005](https://dev.to/yuhaolin2005) (32 articles) · [掘金](https://juejin.cn/user/4250072430682412) (20 articles, 中文)
+More: [dev.to/yuhaolin2005](https://dev.to/yuhaolin2005) (33 articles) · [掘金](https://juejin.cn/user/4250072430682412) (22 articles, 中文)
 
 ---
 
